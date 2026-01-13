@@ -30,16 +30,15 @@
 
 .fav-icon {
   font-size: 18px;
-  color: #cdcfd4;     
+  color: #cdcfd4;
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
 /* ❤️ Active state */
 .fav-icon.active {
-  color: #ff4d4f;     /* red */
+  color: #ff4d4f; /* red */
 }
-
 
 /* IMAGE */
 .car-img {
@@ -50,8 +49,8 @@
 }
 
 .car-info span {
-  display: inline-flex;   
-    width: auto !important; 
+  display: inline-flex;
+  width: auto !important;
   min-width: 0 !important;
 }
 
@@ -59,7 +58,7 @@
   width: 18px !important;
   height: 18px !important;
   margin-right: 6px;
-  flex-shrink: 0;         
+  flex-shrink: 0;
 }
 
 /* BOTTOM */
@@ -94,56 +93,42 @@
   background: #274bcc;
 }
 @media (max-width: 768px) {
-
   .car-card {
     padding: 14px;
     position: relative;
   }
 
   /* image left */
- .car-card img {
-    width: 69%; 
-   height: 90px;
+  .car-card img {
+    width: 69%;
+    height: 90px;
   }
   .car-info {
     position: absolute;
-    top: 78px;        
-    right: 16px;      
+    top: 78px;
+    right: 16px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
     font-size: 11px;
+    gap: 8px;
+    font-weight: 500;
+    font-family: "Plus Jakarta Sans", sans-serif;
     align-items: flex-start;
-    }
+  }
 
   .info-icon {
     width: 14px !important;
     height: 14px !important;
-  } 
-  
-.car-info {
-  display: flex;
-  flex-direction: column;  
-  gap: 8px;
-  font-weight: 500;
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-/* aapka existing code – unchanged */
-.car-info span {
-  display: flex;
-  gap: 6px;
-  white-space: nowrap;
-}
-
-/* icon size – unchanged */
-.info-icon {
-  width: 14px !important;
-  height: 14px !important;
-}
-
-
-  /* bottom section */
+  }
+  .car-info span {
+    display: flex;
+    gap: 6px;
+    white-space: nowrap;
+  }
+  .info-icon {
+    width: 14px !important;
+    height: 14px !important;
+  }
   .card-bottom {
     margin-top: 16px;
   }
@@ -158,4 +143,3 @@
     width: 36% !important;
   }
 }
-

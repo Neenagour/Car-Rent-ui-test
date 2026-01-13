@@ -28,7 +28,7 @@
 /* Car Info */
 .car-info {
   display: flex;
-  align-items: center;
+  /* align-items: flex-start; */
   gap: 14px;
   margin-bottom: 20px;
 }
