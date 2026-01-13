@@ -32,7 +32,7 @@ const CarCard = ({ id, name, type, image, price }) => {
       {/* IMAGE */}
       <img src={image} alt={name} className="car-img" />
 
-      {/* FEATURES */}
+      {/* FEATURES */} 
      <div className="car-info">
   <span>
     <img src={gasIcon} alt="fuel" className="info-icon" />

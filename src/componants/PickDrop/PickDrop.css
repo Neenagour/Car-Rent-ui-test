@@ -36,7 +36,9 @@
 
 .fields label {
   font-size: 12px;
-  color: #90a3bf;
+  color: #1A202C;
+  font-weight: 700;
+   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .ant-select {
@@ -89,7 +91,7 @@
 
   .fields label {
     font-size: 10px;
-    color: #6b7280;
+    color: #1A202C;
    
     display: block;
   }

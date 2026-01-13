@@ -30,14 +30,14 @@
 
 .fav-icon {
   font-size: 18px;
-  color: #cdcfd4;     /* default (inactive) */
+  color: #cdcfd4;     
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
 /* ❤️ Active state */
 .fav-icon.active {
-  color: #ff4d4f;     /* red */
+  color: #ff4d4f;     
 }
 
 
@@ -50,9 +50,9 @@
 }
 
 .car-info span {
-  display: inline-flex;   /* text + icon line me */
+  display: inline-flex;   
   align-items: center;
-  width: auto !important; /* 🔥 88px override */
+  width: auto !important; 
   min-width: 0 !important;
 }
 
@@ -60,7 +60,7 @@
   width: 18px !important;
   height: 18px !important;
   margin-right: 6px;
-  flex-shrink: 0;         /* icon squeeze na ho */
+  flex-shrink: 0;         
 }
 
 /* BOTTOM */
@@ -96,40 +96,54 @@
 }
 @media (max-width: 768px) {
 
-  /* CARD */
   .car-card {
     padding: 14px;
+    position: relative;
   }
 
-  /* IMAGE LEFT */
-  .car-img {
-    height: 90px;
-    margin: 8px 0;
+  /* image left */
+ .car-card img {
+    width: 69%; 
+   height: 90px;
   }
-
-  /* 🔥 MAIN FIX — features right side column */
   .car-info {
+    position: absolute;
+    top: 78px;        
+    right: 16px;      
     display: flex;
-    flex-direction: column;      /* 👈 ek ke niche ek */
-  justify-content: flex-end;      /* 👈 right side */
+    flex-direction: column;
     gap: 6px;
-    font-size: 11px;
-    margin-top: -96px;           /* 👈 image ke right me lane ke liye */
-  }
-
-  .car-info span {
-    display: flex;
-  
-    gap: 6px;
-    white-space: nowrap;
-  }
+    font-size: 11px
+    }
 
   .info-icon {
     width: 14px !important;
     height: 14px !important;
-  }
+  } 
+  
+.car-info {
+  display: flex;
+  flex-direction: column;  
+  gap: 8px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
 
-  /* BOTTOM — price left, button right */
+/* aapka existing code – unchanged */
+.car-info span {
+  display: flex;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+/* icon size – unchanged */
+.info-icon {
+  width: 14px !important;
+  height: 14px !important;
+}
+
+
+  /* bottom section */
   .card-bottom {
     margin-top: 16px;
   }
@@ -141,6 +155,7 @@
   .rent-btn {
     padding: 6px 10px;
     font-size: 12px;
-    width: 35% !important;
+    width: 36% !important;
   }
 }
+
