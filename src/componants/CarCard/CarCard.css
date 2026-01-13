@@ -30,14 +30,14 @@
 
 .fav-icon {
   font-size: 18px;
-  color: #cdcfd4;     
+  color: #cdcfd4;     /* default (inactive) */
   cursor: pointer;
   transition: color 0.2s ease;
 }
 
 /* ❤️ Active state */
 .fav-icon.active {
-  color: #ff4d4f;     
+  color: #ff4d4f;     /* red */
 }
 
 
@@ -50,8 +50,8 @@
 }
 
 .car-info span {
-  display: inline-flex;   
-  align-items: center;
+  display: inline-flex;   /* text + icon line me */
+  align-items: flex-start;
   width: auto !important; 
   min-width: 0 !important;
 }
